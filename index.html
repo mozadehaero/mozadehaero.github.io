@@ -1,220 +1,196 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mo Zadeh — Portfolio & Research</title>
-  <meta name="description" content="Portfolio website for Mo Zadeh — bio, research, publications, interests, and contact." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-  <style>
-    :root { --ink:#e6e9ef; --ink-dim:#b9c0ce; --bg:#0b0d12; --card:#11141a; --accent:#7cc4ff; }
-    html { scroll-behavior: smooth; }
-    @media (prefers-reduced-motion: reduce){ html{ scroll-behavior: auto; } }
-    body {font-family: Inter, sans-serif; margin:0; padding:0; line-height:1.6; background:var(--bg); color:var(--ink);}    
-    .wrap {max-width:900px; margin:auto; padding:20px;}
+<!DOCTYPE HTML>
+<!-- Editorial by HTML5 UP | html5up.net | Free for personal and commercial use under the CCA 3.0 license (html5up.net/license) -->
+<html>
+	<head>
+		<title>Mo Zadeh — Portfolio & Research</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="Portfolio website for Mo Zadeh — bio, research, publications, interests, and contact." />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script type="application/ld+json">
+		{
+		  "@context": "https://schema.org",
+		  "@type": "Person",
+		  "name": "Mo Zadeh",
+		  "url": "https://mo-zadeh.com",
+		  "jobTitle": "Researcher",
+		  "sameAs": [
+		    "https://scholar.google.com/citations?user=N-UpxBcAAAAJ&hl=en",
+		    "https://www.linkedin.com/in/naghavizadeh/"
+		  ]
+		}
+		</script>
+	</head>
+	<body class="is-preload">
 
-    /* Header + nav */
-    header {background:var(--card); padding:14px 0; position:sticky; top:0; z-index:50; border-bottom:1px solid rgba(255,255,255,.06)}
-    .header-inner{display:flex;align-items:center;justify-content:space-between;gap:12px}
-    .brand{font-weight:800}
-    .nav-links{display:flex;gap:16px; align-items:center}
-    .nav-links a {color:var(--ink-dim); text-decoration:none;}
-    .nav-links a:hover{color:#fff}
+		<!-- Wrapper -->
+		<div id="wrapper">
 
-    /* Social icons */
-    .social-icons a{color:var(--ink-dim); margin-left:10px;}
-    .social-icons a:hover{color:var(--accent)}
-    .social-icons svg{width:20px;height:20px;vertical-align:middle}
+			<!-- Main -->
+			<div id="main">
+				<div class="inner">
 
-    /* Mobile menu button */
-    .menu-btn{display:none; background:none; border:1px solid rgba(255,255,255,.18); color:var(--ink); padding:8px 10px; border-radius:8px; cursor:pointer}
-    .menu-btn svg{width:22px;height:22px;vertical-align:middle}
+					<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo"><strong>Mo Zadeh</strong></a>
+						<ul class="icons">
+							<li><a href="https://scholar.google.com/citations?user=N-UpxBcAAAAJ&hl=en" target="_blank" class="icon solid fa-graduation-cap"><span class="label">Scholar</span></a></li>
+							<li><a href="https://www.linkedin.com/in/naghavizadeh/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						</ul>
+					</header>
 
-    section {margin:40px 0;}
-    h1,h2,h3 {color:var(--accent);}    
-    img {max-width:100%; border-radius:12px;}
-    .card {background:var(--card); padding:20px; border-radius:12px; margin-bottom:20px;}
-    .pub {margin-bottom:15px;}
-    footer {border-top:1px solid #333; padding:20px; font-size:14px; color:#8a94a7; text-align:center;}
-    .btn {background:var(--accent); color:#0a0a0a; padding:10px 16px; border-radius:8px; text-decoration:none;}
+					<!-- About -->
+					<section id="about">
+						<header class="major">
+							<h2>About Me</h2>
+						</header>
+						<span class="image left"><img src="images/headshot.jpg" alt="Mo Zadeh" /></span>
+						<p>Hello! I’m Mo Zadeh, a researcher focusing on [your area of expertise]. I am passionate about [interest 1, interest 2, interest 3]. Currently, I am [your position] at [your institution/company].</p>
+					</section>
 
-    /* Back-to-top button */
-    #to-top{position:fixed; right:18px; bottom:18px; display:none; padding:10px 12px; border-radius:999px; background:var(--accent); color:#0a0a0a; font-weight:700; text-decoration:none; box-shadow:0 6px 20px rgba(0,0,0,.35)}
-    #to-top.show{display:inline-block}
+					<!-- Research -->
+					<section id="research">
+						<header class="major">
+							<h2>Research</h2>
+						</header>
+						<div class="features">
+							<article>
+								<span class="icon solid fa-flask"></span>
+								<div class="content">
+									<h3>Theme A</h3>
+									<p>Short description of research theme A with why it matters. <a href="#">Example project →</a></p>
+								</div>
+							</article>
+							<article>
+								<span class="icon solid fa-microscope"></span>
+								<div class="content">
+									<h3>Theme B</h3>
+									<p>Short description of research theme B. <a href="#">Example project →</a></p>
+								</div>
+							</article>
+							<article>
+								<span class="icon solid fa-robot"></span>
+								<div class="content">
+									<h3>Theme C</h3>
+									<p>Short description of research theme C. <a href="#">Example project →</a></p>
+								</div>
+							</article>
+						</div>
+					</section>
 
-    /* Responsive adjustments */
-    @media (max-width: 900px){ .wrap{padding:16px} }
+					<!-- Publications -->
+					<section id="publications">
+						<header class="major">
+							<h2>Selected Publications</h2>
+						</header>
+						<div class="posts">
+							<article>
+								<h3>Paper Title One</h3>
+								<p>Author A, <u>Mo Zadeh</u>, Author C — Venue, Year</p>
+								<ul class="actions">
+									<li><a href="#" class="button">PDF</a></li>
+									<li><a href="#" class="button">Code</a></li>
+								</ul>
+							</article>
+							<article>
+								<h3>Paper Title Two</h3>
+								<p>Authors — Journal/Conference, Year</p>
+								<ul class="actions">
+									<li><a href="#" class="button">PDF</a></li>
+								</ul>
+							</article>
+						</div>
+					</section>
 
-    @media (max-width: 768px) {
-      .menu-btn{display:inline-flex; align-items:center; gap:8px}
-      /* hide links by default on mobile */
-      .nav-links{display:none; flex-direction:column; padding:10px 0}
-      .nav-links.open{display:flex}
-      h1 {font-size:28px;}
-      h2 {font-size:22px;}
-      h3 {font-size:18px;}
-      body {font-size:16px;}
-    }
+					<!-- Portfolio -->
+					<section id="portfolio">
+						<header class="major">
+							<h2>Portfolio</h2>
+						</header>
+						<div class="posts">
+							<article>
+								<a href="#" class="image"><img src="images/project1.jpg" alt="Project One" /></a>
+								<h3>Project One</h3>
+								<p>Description of your project and what you did.</p>
+							</article>
+							<article>
+								<a href="#" class="image"><img src="images/project2.jpg" alt="Project Two" /></a>
+								<h3>Project Two</h3>
+								<p>Description of another project and its impact.</p>
+							</article>
+						</div>
+					</section>
 
-    @media (max-width: 480px) {
-      h1 {font-size:24px;}
-      h2 {font-size:20px;}
-      h3 {font-size:16px;}
-      body {font-size:15px;}
-    }
-  </style>
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%2311161f'/%3E%3Ctext x='50' y='58' font-family='Arial' font-size='56' text-anchor='middle' fill='%237cc4ff'%3EMZ%3C/text%3E%3C/svg%3E">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Mo Zadeh",
-    "url": "https://mo-zadeh.com",
-    "jobTitle": "Researcher",
-    "sameAs": [
-      "https://scholar.google.com/citations?user=N-UpxBcAAAAJ&hl=en", 
-      "https://www.linkedin.com/in/naghavizadeh/"
-    ]
-  }
-  </script>
-</head>
-<body>
-  <header>
-    <div class="wrap header-inner">
-      <div class="brand">Mo Zadeh</div>
-      <button id="menu-btn" class="menu-btn" aria-label="Toggle menu" aria-controls="site-nav" aria-expanded="false">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-        <span class="menu-text" style="font-weight:600">Menu</span>
-      </button>
-      <nav id="site-nav" class="nav-links" role="navigation">
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#publications">Publications</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#contact">Contact</a>
-        <span class="social-icons">
-          <a href="https://scholar.google.com/citations?user=N-UpxBcAAAAJ&hl=en" target="_blank" aria-label="Google Scholar">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L1 9l11 7 9-5.91V17h2V9L12 2z"/></svg>
-          </a>
-          <a href="https://www.linkedin.com/in/naghavizadeh/" target="_blank" aria-label="LinkedIn">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14C2.2 0 0 2.2 0 5v14c0 2.8 2.2 5 5 5h14c2.8 0 5-2.2 5-5V5c0-2.8-2.2-5-5-5zM8 19H5V9h3v10zm-1.5-11.3c-1 0-1.8-.8-1.8-1.7s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.8 1.7-1.8 1.7zM20 19h-3v-5.6c0-1.3-.5-2.2-1.7-2.2-.9 0-1.4.6-1.7 1.2-.1.2-.1.5-.1.8V19h-3s.1-9 0-10h3v1.5c.4-.6 1.2-1.5 2.9-1.5 2.1 0 3.6 1.4 3.6 4.3V19z"/></svg>
-          </a>
-        </span>
-      </nav>
-    </div>
-  </header>
+					<!-- Contact -->
+					<section id="contact">
+						<header class="major">
+							<h2>Contact</h2>
+						</header>
+						<p>If you’d like to reach out, please use the form below:</p>
+						<form method="post" action="https://formspree.io/f/your-form-id">
+							<div class="fields">
+								<div class="field half">
+									<label for="name">Name</label>
+									<input type="text" name="name" id="name" required />
+								</div>
+								<div class="field half">
+									<label for="email">Email</label>
+									<input type="email" name="email" id="email" required />
+								</div>
+								<div class="field">
+									<label for="message">Message</label>
+									<textarea name="message" id="message" rows="6" required></textarea>
+								</div>
+							</div>
+							<ul class="actions">
+								<li><input type="submit" value="Send Message" class="primary" /></li>
+							</ul>
+						</form>
+						<p>Or email me directly at <a href="mailto:hello@mo-zadeh.com">hello@mo-zadeh.com</a></p>
+					</section>
 
-  <main class="wrap">
-    <section id="about">
-      <h1>About Me</h1>
-      <img src="img/headshot.jpg" alt="Mo Zadeh headshot" />
-      <p>Hello! I’m Mo Zadeh, a researcher focusing on [your area of expertise]. I am passionate about [interest 1, interest 2, interest 3]. Currently, I am [your position] at [your institution/company].</p>
-    </section>
+				</div>
+			</div>
 
-    <section id="research">
-      <h2>Research</h2>
-      <div class="card">
-        <h3>Theme A</h3>
-        <p>Short description of research theme A with why it matters. <a href="#">Example project →</a></p>
-      </div>
-      <div class="card">
-        <h3>Theme B</h3>
-        <p>Short description of research theme B. <a href="#">Example project →</a></p>
-      </div>
-      <div class="card">
-        <h3>Theme C</h3>
-        <p>Short description of research theme C. <a href="#">Example project →</a></p>
-      </div>
-    </section>
+			<!-- Sidebar -->
+			<div id="sidebar">
+				<div class="inner">
 
-    <section id="publications">
-      <h2>Selected Publications</h2>
-      <div class="pub">
-        <strong>Paper Title One</strong><br>
-        Author A, <u>Mo Zadeh</u>, Author C — Venue, Year<br>
-        <a href="#">PDF</a> · <a href="#">Code</a>
-      </div>
-      <div class="pub">
-        <strong>Paper Title Two</strong><br>
-        Authors — Journal/Conference, Year<br>
-        <a href="#">PDF</a>
-      </div>
-    </section>
+					<!-- Menu -->
+					<nav id="menu">
+						<header class="major">
+							<h2>Menu</h2>
+						</header>
+						<ul>
+							<li><a href="#about">About</a></li>
+							<li><a href="#research">Research</a></li>
+							<li><a href="#publications">Publications</a></li>
+							<li><a href="#portfolio">Portfolio</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+					</nav>
 
-    <section id="portfolio">
-      <h2>Portfolio</h2>
-      <div class="card">
-        <h3>Project One</h3>
-        <p>Description of your project and what you did.</p>
-      </div>
-      <div class="card">
-        <h3>Project Two</h3>
-        <p>Description of another project and its impact.</p>
-      </div>
-    </section>
+					<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">© <span id="year"></span> Mo Zadeh. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>If you’d like to reach out, please use the form below:</p>
-      <form action="https://formspree.io/f/your-form-id" method="POST">
-        <p><label>Your Name<br><input type="text" name="name" required></label></p>
-        <p><label>Email<br><input type="email" name="email" required></label></p>
-        <p><label>Message<br><textarea name="message" rows="6" required></textarea></label></p>
-        <p><button class="btn" type="submit">Send</button></p>
-      </form>
-      <p>Or email me directly at <a href="mailto:hello@mo-zadeh.com">hello@mo-zadeh.com</a></p>
-    </section>
-  </main>
+				</div>
+			</div>
 
-  <a id="to-top" href="#top" aria-label="Back to top">↑</a>
+		</div>
 
-  <footer>
-    © <span id="year"></span> Mo Zadeh · <a href="#">CV (PDF)</a>
-    <div class="social-icons" style="margin-top:8px">
-      <a href="https://scholar.google.com/citations?user=N-UpxBcAAAAJ&hl=en" target="_blank" aria-label="Google Scholar">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L1 9l11 7 9-5.91V17h2V9L12 2z"/></svg>
-      </a>
-      <a href="https://www.linkedin.com/in/naghavizadeh/" target="_blank" aria-label="LinkedIn">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14C2.2 0 0 2.2 0 5v14c0 2.8 2.2 5 5 5h14c2.8 0 5-2.2 5-5V5c0-2.8-2.2-5-5-5zM8 19H5V9h3v10zm-1.5-11.3c-1 0-1.8-.8-1.8-1.7s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.8 1.7-1.8 1.7zM20 19h-3v-5.6c0-1.3-.5-2.2-1.7-2.2-.9 0-1.4.6-1.7 1.2-.1.2-.1.5-.1.8V19h-3s.1-9 0-10h3v1.5c.4-.6 1.2-1.5 2.9-1.5 2.1 0 3.6 1.4 3.6 4.3V19z"/></svg>
-      </a>
-    </div>
-  </footer>
-
-<script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-
-  // Mobile menu toggle
-  const btn = document.getElementById('menu-btn');
-  const nav = document.getElementById('site-nav');
-  function toggleMenu(){
-    const open = nav.classList.toggle('open');
-    btn.setAttribute('aria-expanded', String(open));
-  }
-  btn.addEventListener('click', toggleMenu);
-  nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
-    if (nav.classList.contains('open')) toggleMenu();
-  }));
-
-  // Back-to-top visibility + smooth scroll fallback
-  const toTop = document.getElementById('to-top');
-  function onScroll(){
-    if (window.scrollY > 400) toTop.classList.add('show'); else toTop.classList.remove('show');
-  }
-  document.addEventListener('scroll', onScroll, {passive:true});
-  onScroll();
-
-  // If no native smooth-behavior support or reduced motion, just jump
-  toTop.addEventListener('click', (e)=>{
-    if (!('scrollBehavior' in document.documentElement.style) || window.matchMedia('(prefers-reduced-motion: reduce)').matches){
-      e.preventDefault();
-      window.scrollTo(0,0);
-    }
-  });
-</script>
-</body>
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+	</body>
 </html>
+
 
 <!-- CNAME file content (create separately in the repo root, not inside HTML):
 mo-zadeh.com
@@ -240,3 +216,4 @@ Value: mo-zadeh.github.io
 
 Leave TTL as default (3600). Save changes and wait for DNS to propagate.
 -->
+
