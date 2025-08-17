@@ -12,6 +12,14 @@
 			/* Custom override: increase the header name size */
 			#header .logo { font-size: clamp(1.6rem, 2.4vw, 2.6rem); line-height: 1.1; }
 
+			/* Headshot in header sized as a multiple of the header text line-height */
+			#header .logo { display: inline-flex; align-items: center; gap: 0.6em; --avatar-mult: 1.8; }
+			#header .logo .avatar { border-radius: 9999px; display:block; height: calc(var(--avatar-mult) * 4lh); width: auto; object-fit: cover; }
+			@supports not (height: 1lh) {
+				/* Fallback for older browsers: 1lh ≈ line-height×font-size; our line-height is 1.1 */
+				#header .logo .avatar { height: calc(var(--avatar-mult) * 1.1em); }
+			}
+
 			/* Bigger Scholar + LinkedIn icons in header */
 			#header .icons .icon:before { font-size: 2em; }
 			/* Optional: tweak hit area a bit larger without changing layout */
@@ -42,7 +50,7 @@
 
 					<!-- Header -->
 					<header id="header">
-						<a href="index.html" class="logo"><strong>Mo Zadeh</strong></a>
+						<a href="index.html" class="logo"><img class="avatar" src="images/55236 cdjpg.jpg" alt="Mo Zadeh headshot" /><strong>Mo Zadeh</strong></a>
 						<ul class="icons">
 							<li><a href="https://scholar.google.com/citations?user=N-UpxBcAAAAJ&hl=en" target="_blank" class="icon solid fa-graduation-cap"><span class="label">Scholar</span></a></li>
 							<li><a href="https://www.linkedin.com/in/naghavizadeh/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
