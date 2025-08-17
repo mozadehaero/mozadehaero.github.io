@@ -9,17 +9,48 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
-			:root { --header-lh: 1.1; }
-			/* Header title size + line-height variable */
-			#header .logo { font-size: clamp(1.6rem, 2.4vw, 2.6rem); line-height: var(--header-lh); }
+			/* === Typography size controls (edit values in :root) === */
+			:root {
+				--header-lh: 1.1;                               /* line-height for site title */
 
-			/* Bigger Scholar + LinkedIn icons in header */
-			#header .icons .icon:before { font-size: 2em; }
+				--fz-site-title: clamp(1.8rem, 2.5vw, 2.8rem);   /* header name */
+				--fz-section-title: clamp(1.5rem, 2vw, 2.2rem);   /* h2 in section headers */
+				--fz-subtitle: clamp(1.15rem, 1.4vw, 1.35rem);    /* h3, card titles */
+				--fz-body: clamp(1rem, 1.05vw, 1.1rem);           /* paragraphs & general text */
+				--fz-menu-heading: clamp(1.1rem, 1.4vw, 1.3rem);  /* sidebar menu heading */
+				--fz-menu-link: clamp(0.95rem, 1vw, 1.05rem);     /* sidebar menu links */
+				--fz-button: clamp(0.95rem, 1vw, 1.05rem);        /* button/CTA text */
+				--fz-small: clamp(0.85rem, 0.9vw, 0.95rem);       /* footer/caption text */
+				--fz-icon: 1.8em;                                 /* header icon size */
+			}
+
+			/* Site title */
+			#header .logo { font-size: var(--fz-site-title); line-height: var(--header-lh); }
+
+			/* Section & subsection headings */
+			.major h2 { font-size: var(--fz-section-title); }
+			h3 { font-size: var(--fz-subtitle); }
+
+			/* Body text */
+			body { font-size: var(--fz-body); }
+
+			/* Sidebar menu */
+			#menu header.major h2 { font-size: var(--fz-menu-heading); }
+			#menu ul li a { font-size: var(--fz-menu-link); }
+
+			/* Buttons */
+			.button, input[type="submit"], .actions .button, .button.primary { font-size: var(--fz-button); }
+
+			/* Small/caption text */
+			#footer, #footer .copyright { font-size: var(--fz-small); }
+
+			/* Header icons */
+			#header .icons .icon:before { font-size: var(--fz-icon); }
 			#header .icons a.icon { padding: 0.15em 0.35em; }
 
 			/* About photo sized as a multiple of the header text line-height */
 			#about span.image.left img.about-photo {
-				--about-mult: 20; /* change this number to scale (e.g., 1.5, 2, 3, 4) */
+				--about-mult: 4; /* change this number to scale (e.g., 1.5, 2, 3, 4) */
 				line-height: var(--header-lh);
 				height: calc(var(--about-mult) * 1lh);
 				width: auto !important; /* override template's width:100% */
@@ -30,6 +61,12 @@
 			@supports not (height: 1lh) {
 				/* Fallback: approximate 1lh with (line-height * 1em) */
 				#about span.image.left img.about-photo { height: calc(var(--about-mult) * var(--header-lh) * 1em); }
+			}
+		
+			/* Ensure each section contains floats so its height equals the tallest child (text or image) */
+			#main .inner > section { display: flow-root; }
+			@supports not (display: flow-root) {
+				#main .inner > section::after { content: ""; display: table; clear: both; }
 			}
 		</style>
 		<script type="application/ld+json">
@@ -234,4 +271,3 @@ To make this template work properly with GitHub Pages, upload the **assets/** an
 
 Without these files, the site will load without styling/images. Once pushed, the full Editorial look will appear.
 -->
-
