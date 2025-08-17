@@ -8,6 +8,10 @@
 		<meta name="description" content="Portfolio website for Mo Zadeh — bio, research, publications, interests, and contact." />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* Custom override: increase the header name size */
+			#header .logo { font-size: clamp(1.6rem, 2.4vw, 2.6rem); line-height: 1.1; }
+		</style>
 		<script type="application/ld+json">
 		{
 		  "@context": "https://schema.org",
@@ -191,29 +195,22 @@
 	</body>
 </html>
 
+<!--
+SETUP NOTES (not visible on the site):
+To make this template work properly with GitHub Pages, upload the **assets/** and **images/** folders from the Editorial ZIP into your repo.
 
-<!-- CNAME file content (create separately in the repo root, not inside HTML):
-mo-zadeh.com
+1) In your repo root (same level as index.html), create **assets/** and copy these subfolders from Editorial:
+   - assets/css/  → contains main.css and noscript.css
+   - assets/js/   → contains jquery.min.js, browser.min.js, breakpoints.min.js, util.js, main.js
 
-DNS records to configure in Squarespace for GitHub Pages:
+2) In the repo root, create **images/** and add your images:
+   - images/headshot.jpg (your profile photo)
+   - images/project1.jpg, images/project2.jpg (portfolio images)
 
-A Records (Host = @):
-185.199.108.153
-185.199.109.153
-185.199.110.153
-185.199.111.153
+3) Commit and push. index.html already references:
+   - assets/css/main.css, assets/css/noscript.css
+   - assets/js/*.js
+   - images/*.jpg
 
-AAAA Records (optional IPv6, Host = @):
-2606:50c0:8000::153
-2606:50c0:8001::153
-2606:50c0:8002::153
-2606:50c0:8003::153
-
-CNAME Record:
-Host: www
-Type: CNAME
-Value: mo-zadeh.github.io
-
-Leave TTL as default (3600). Save changes and wait for DNS to propagate.
+Without these files, the site will load without styling/images. Once pushed, the full Editorial look will appear.
 -->
-
