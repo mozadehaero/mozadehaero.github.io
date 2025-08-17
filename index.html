@@ -72,6 +72,9 @@
 			/* Publications list spacing */
 			.pub-list { margin-left: 1.25rem; }
 			.pub-list li { margin: 0 0 1rem 0; }
+		
+			/* Contact form status message */
+			.form-status { margin-top: 0.5rem; color: #f56a6a; font-size: var(--fz-small); }
 		</style>
 		<script type="application/ld+json">
 		{
@@ -187,7 +190,9 @@
 							<h2>Contact</h2>
 						</header>
 						<p>If you’d like to reach out, please use the form below:</p>
-						<form method="post" action="https://formspree.io/f/your-form-id">
+						<!-- Replace the action URL with your real Formspree endpoint, e.g. https://formspree.io/f/abcd1234 -->
+						<form id="contact-form" method="POST" action="https://formspree.io/f/meozwgaz">
+							<input type="hidden" name="_subject" value="New message from mo-zadeh.com">
 							<div class="fields">
 								<div class="field half">
 									<label for="name">Name</label>
@@ -206,6 +211,7 @@
 								<li><input type="submit" value="Send Message" class="primary" /></li>
 							</ul>
 						</form>
+						<p id="form-status" class="form-status" aria-live="polite"></p>
 						<p>Or email me directly at <a href="mailto:mo.zadeh.aero@gmail.com">mo.zadeh.aero@gmail.com</a></p>
 					</section>
 
