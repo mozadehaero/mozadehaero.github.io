@@ -75,6 +75,18 @@
 		
 			/* Contact form status message */
 			.form-status { margin-top: 0.5rem; color: #f56a6a; font-size: var(--fz-small); }
+		
+			/* Mobile: make About photo fit the screen and avoid cropping */
+			@media (max-width: 768px) {
+				#about span.image.left { float: none; display: block; margin: 0 0 1.25rem 0 !important; }
+				#about span.image.left img.about-photo {
+					height: auto !important;            /* override the desktop fixed height */
+					width: 100% !important;             /* take full width of mobile container */
+					max-height: 70vh;                   /* keep the whole image within the viewport */
+					object-fit: contain;                /* show the entire image without cropping */
+					display: block;
+				}
+			}
 		</style>
 		<script type="application/ld+json">
 		{
@@ -113,7 +125,7 @@
 						<header class="major">
 							<h2>About Me</h2>
 						</header>
-						<span class="image left"><img class="about-photo" src="images/55236 cdjpg.jpg" alt="Mo Zadeh" /></span>
+						<span class="image left"><img class="about-photo" src="images/headshot.jpg" alt="Mo Zadeh" /></span>
 						<p>Hello! I’m Mo Zadeh, a seasoned engineer, designer and researcher focusing on mechanical metamaterials. I am passionate about design and analysis of structures, architected materials, and robotic mechanisms. Currently, I am senior research associate at University of Bristol.</p>
 					</section>
 
