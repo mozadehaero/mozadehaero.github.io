@@ -87,6 +87,9 @@
 					display: block;
 				}
 			}
+		
+			/* Honeypot (visually hidden but accessible) */
+			.hp-trap { position:absolute; left:-10000px; top:auto; width:1px; height:1px; overflow:hidden; }
 		</style>
 		<script type="application/ld+json">
 		{
@@ -113,7 +116,7 @@
 
 					<!-- Header -->
 					<header id="header">
-						<a href="index.html" class="logo"><strong>Mo Zadeh</strong></a>
+						<a href="index.html" class="logo"><strong>Mohammad Naghavi Zadeh, Ph.D.</strong></a>
 						<ul class="icons">
 							<li><a href="https://scholar.google.com/citations?user=N-UpxBcAAAAJ&hl=en" target="_blank" class="icon solid fa-graduation-cap"><span class="label">Scholar</span></a></li>
 							<li><a href="https://www.linkedin.com/in/naghavizadeh/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
@@ -201,30 +204,20 @@
 						<header class="major">
 							<h2>Contact</h2>
 						</header>
-						<p>If you’d like to reach out, please use the form below:</p>
-						<!-- Replace the action URL with your real Formspree endpoint, e.g. https://formspree.io/f/abcd1234 -->
-						<form id="contact-form" method="POST" action="https://formspree.io/f/meozwgaz">
-							<input type="hidden" name="_subject" value="New message from mo-zadeh.com">
-							<div class="fields">
-								<div class="field half">
-									<label for="name">Name</label>
-									<input type="text" name="name" id="name" required />
-								</div>
-								<div class="field half">
-									<label for="email">Email</label>
-									<input type="email" name="email" id="email" required />
-								</div>
-								<div class="field">
-									<label for="message">Message</label>
-									<textarea name="message" id="message" rows="6" required></textarea>
-								</div>
-							</div>
-							<ul class="actions">
-								<li><input type="submit" value="Send Message" class="primary" /></li>
-							</ul>
-						</form>
-						<p id="form-status" class="form-status" aria-live="polite"></p>
-						<p>Or email me directly at <a href="mailto:mo.zadeh.aero@gmail.com">mo.zadeh.aero@gmail.com</a></p>
+						<p>Use the form below to get in touch. (If it doesn’t load, use the direct link or email me.)</p>
+						<!-- Google Forms embed: replace FORM_ID with your own
+						Steps: Google Form → Send → <> Embed → copy the iframe src.
+						Use the same FORM_ID for the direct link below. -->
+						<div class="card google-form">
+							<iframe 
+								src="https://docs.google.com/forms/d/e/1FAIpQLSdYQei9752QWsYNeeOsX02acagWgUJqoYwMK0DJjo73az-TaA/viewform?embedded=true"
+								width="100%" height="1100" frameborder="0" marginheight="0" marginwidth="0" 
+								title="Contact form">
+								Loading…
+							</iframe>
+						</div>
+						<p>Direct link: <a href="https://docs.google.com/forms/d/e/1FAIpQLSdYQei9752QWsYNeeOsX02acagWgUJqoYwMK0DJjo73az-TaA/viewform" target="_blank" rel="noopener">Open the form</a><br>
+						Or email me at <a href="mailto:mo.zadeh.aero@gmail.com">mo.zadeh.aero@gmail.com</a></p>
 					</section>
 
 				</div>
@@ -265,7 +258,8 @@
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
 		<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-	</body>
+	
+</body>
 </html>
 
 <!--
