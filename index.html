@@ -90,6 +90,11 @@
 		
 			/* Honeypot (visually hidden but accessible) */
 			.hp-trap { position:absolute; left:-10000px; top:auto; width:1px; height:1px; overflow:hidden; }
+		
+			/* Keep header name on a single line (no wrap) and preserve icons */
+			#header { display: flex; align-items: center; justify-content: space-between; flex-wrap: nowrap; gap: .75rem; }
+			#header .logo { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; flex: 1 1 auto; min-width: 0; }
+			#header .icons { flex: 0 0 auto; }
 		</style>
 		<script type="application/ld+json">
 		{
