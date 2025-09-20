@@ -95,6 +95,10 @@
 			#header { display: flex; align-items: center; justify-content: space-between; flex-wrap: nowrap; gap: .75rem; }
 			#header .logo { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; flex: 1 1 auto; min-width: 0; }
 			#header .icons { flex: 0 0 auto; }
+
+			/* PNG icon inside a feature card (Architected Materials) */
+			.features .icon.icon-img:before { display: none; }
+			.features .icon.icon-img img { display: block; width: 2.75rem; height: 2.75rem; object-fit: contain; }
 		</style>
 		<script type="application/ld+json">
 		{
@@ -144,24 +148,34 @@
 						</header>
 						<div class="features">
 							<article>
-								<span class="icon solid fa-flask"></span>
+								<span class="icon icon-img"><img src="images/metamaterials.png" alt="Architected Materials icon" /></span>
 								<div class="content">
-									<h3>Theme A</h3>
-									<p>Short description of research theme A with why it matters. <a href="#">Example project →</a></p>
+									<h3>Architected Materials</h3>
+									<p>Designing and analyzing cellular and metamaterial architectures for tunable stiffness, damping, and Poisson’s ratio.</p>
 								</div>
 							</article>
+
 							<article>
-								<span class="icon solid fa-microscope"></span>
+								<span class="icon icon-img"><img src="images/Design.png" alt="Design icon" /></span>
 								<div class="content">
-									<h3>Theme B</h3>
-									<p>Short description of research theme B. <a href="#">Example project →</a></p>
+									<h3>Design</h3>
+									<p>Concept-to-prototype workflows, optimization, and rapid fabrication for performance‑driven products.</p>
 								</div>
 							</article>
+
 							<article>
-								<span class="icon solid fa-robot"></span>
+								<span class="icon icon-img"><img src="images/Aerospace.png" alt="Aerospace structures icon" /></span>
 								<div class="content">
-									<h3>Theme C</h3>
-									<p>Short description of research theme C. <a href="#">Example project →</a></p>
+									<h3>Aerospace Structures</h3>
+									<p>Lightweight structures and morphing components; dynamic characterization and reliability.</p>
+								</div>
+							</article>
+
+							<article>
+								<span class="icon icon-img"><img src="images/Robotics.png" alt="Robotics icon" /></span>
+								<div class="content">
+									<h3>Robotics &amp; AI</h3>
+									<p>Soft actuation, sensing, and control; data‑driven design for robust, adaptive mechanisms.</p>
 								</div>
 							</article>
 						</div>
@@ -286,5 +300,3 @@ To make this template work properly with GitHub Pages, upload the **assets/** an
 
 Without these files, the site will load without styling/images. Once pushed, the full Editorial look will appear.
 -->
-
-
